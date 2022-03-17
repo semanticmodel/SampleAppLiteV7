@@ -479,6 +479,28 @@
           "logicalLevel:SampleApp Lite.D3 Orders (Facts Attributes).Total Orders"
         ]
       }
+    ],
+    "joins": [ {
+        "rightTable": "logicalTable:SampleApp Lite.D0 Time",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:SampleApp Lite.D1 Products",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE",
+        "drivingTable": "logicalTable:SampleApp Lite.D1 Products"
+      },
+      {
+        "rightTable": "logicalTable:SampleApp Lite.D2 Offices",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:SampleApp Lite.D3 Orders (Facts Attributes)",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      }
     ]
   }
 }

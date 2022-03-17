@@ -55,6 +55,23 @@
           ]
         }
       }
+    ],
+    "joins": [ {
+        "rightTable": "logicalTable:SampleApp Lite.D2 Offices",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:SampleApp Lite.D0 Time",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:SampleApp Lite.D1 Products",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      }
     ]
+
   }
 }
